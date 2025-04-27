@@ -24,6 +24,9 @@ Create this code with Python 3.11 version
 ```
 streamlit run app.py
 ```
+
+Steps 3 and 4 will create another folder to save our Chroma vector database locally.
+
 5. By default, we use Huggingface models, but if you plan to use OpenAI in conversational RAG, change this code in app.py : 
 
 ![image](https://github.com/user-attachments/assets/85c78a73-1d2b-4975-8d4c-1fd743e45445)
