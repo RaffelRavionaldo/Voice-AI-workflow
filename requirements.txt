@@ -1,0 +1,12 @@
+langchain==0.3.24
+langchain_community==0.3.22
+langchain_openai==0.3.14
+numpy==2.2.5
+pydub==0.25.1
+python-dotenv==1.1.0
+sounddevice==0.5.1
+soundfile==0.13.1
+streamlit==1.44.1
+torch==2.6.0+cu124
+transformers==4.49.0
+wavio==0.0.9
