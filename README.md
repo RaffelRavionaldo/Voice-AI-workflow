@@ -2,7 +2,7 @@
 
 Create this code with Python 3.11 version
 
-Tools used :
+## Tools used :
 1. Langchain : For conversational RAG
 2. Chroma : For the vector database
 3. OpenAI : as a chat model (optional, you can completely just use HuggingFace)
@@ -11,7 +11,7 @@ Tools used :
   - Whisper as Speech-To-Text models
   - Bark as Text-To-Speech models
 
-Steps to install and run this repo : 
+## Steps to install and run this repo : 
 1. Install the library and packages we need (for pytorch, better you exclude it and install the version that supports your device)
 ```
    pip install -r requirements.txt
@@ -34,8 +34,8 @@ model_source="openai",
 embedding_source="openai",
 ```
 
-6. By default too, i use quantization for load mistral model, you can delete it and change the models with what you like (deepseek, llama or etc), but i recommend to use chat models, not base
+6. By default, I use quantization for loading the Mistral model from Huggingface. You can delete it and change the models with what you like (deepseek, llama, etc), but I recommend using chat models, not base models.
 
-App Flow: 
+## App Flow: 
 
-> User records the question --> Whisper generate text from user speech --> sends it to Conversational RAG --> checks if the chroma vector database is created or not, if not, create the chroma database --> answers user question --> sends the answer to TTS
+> User records the question --> Whisper generates text from user speech --> sends it to Conversational RAG --> checks if the chroma vector database is created or not, if not, create the chroma database --> answers user question --> sends the answer to TTS
