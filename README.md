@@ -2,6 +2,10 @@
 
 Create this code with Python 3.11 version
 
+## App Flow: 
+
+> User records the question --> Whisper generates text from user speech --> sends it to Conversational RAG --> checks if the chroma vector database is created or not, if not, makes the chroma database with embedding models dependent on your Chat models (openAI or hugging face) --> answers user question --> sends the answer to TTS
+
 ## Tools used :
 1. Langchain : For conversational RAG
 2. Chroma : For the vector database
@@ -39,6 +43,6 @@ embedding_source="openai",
 
 6. By default, I use quantization for loading the Mistral model from Huggingface. You can delete it and change the models with what you like (deepseek, llama, etc), but I recommend using chat models, not base models.
 
-## App Flow: 
-
-> User records the question --> Whisper generates text from user speech --> sends it to Conversational RAG --> checks if the chroma vector database is created or not, if not, create the chroma database --> answers user question --> sends the answer to TTS
+ ## Next step: 
+ 1. Include machine translation to support any languages (right now, just supports English)
+ 2. Enable question filtering (currently it is already in the conversational RAG code, but I turned it off because it is less effective, for example, the first question is what is Alara?. and the code has answered it, then the second question is how to use it?. Then my current filtering will ignore that question.)
